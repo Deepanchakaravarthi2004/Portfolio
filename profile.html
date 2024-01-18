@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+</head>
+<body>
+   
+<h1>PROFILE</h1>
+<div class="data">
+    <video  id="myVideo" autoplay loop muted >
+        <source src="images\6.mp4" type="video/mp4">  
+    </video>
+    <img class="k"  src="images\main.png"> 
+    <h2>
+        "Motivated engineer with a strong interest in generative AI, seeking opportunities to apply my skills and
+        knowledge to contribute to the development of innovative AI solutions.”
+    </h2>
+    <button> <a  href="resume.pdf" target="_blank" >DOWNLOAD RESUME</a></button><br>
+    <button><a  href="contact.html" target="_blank">CONTACT ME</a></button>
+</div>
+
+<style>
+    .data
+    {
+        display: grid;
+        place-items: center;
+    }
+        #myVideo
+        {
+        right: 0;
+        bottom: 0;
+        position:absolute;
+        z-index:-20;
+        background-position: center;
+        width: 100%; 
+        height: 100vh;
+        }
+        @media (min-aspect-ratio:16/9) 
+        {
+            #myVideo
+            {
+                width: 100%;
+                height:auto;
+               
+                
+            }   
+        }
+        @media (max-aspect-ratio:16/9) 
+        {
+            #myVideo
+            {
+                width: auto;
+                height:100%;
+            }   
+        }
+       
+
+        h1{
+            color: aliceblue;
+            text-align:center;
+        }
+        button
+        {
+            display: inline-block;
+            height:60px;
+            width:max-content;
+            margin-bottom: 20px;
+            font-size: large;
+            border-radius: 10px;
+            font-weight: lighter;
+            box-shadow:  10px 10px 10px 0px rgb(255, 252, 252);
+            background-color: burlywood;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        button:hover{
+            transform: scale(1.5);
+
+        }
+      
+       
+        body{
+           background-color: black;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: larger;
+            font-weight: 400;
+            text-align: center;
+           
+        }
+        .k
+        {
+            
+            height:80vh;
+            width:fit-content;
+            float:left;
+            
+            filter: drop-shadow(10px 10px 10px 10px white);
+        }
+        h2{
+            text-align: justify;
+            display:flex;
+            color: aliceblue;
+            text-align: center;
+        }
+        
+        
+</style>
+</body>
+</html>

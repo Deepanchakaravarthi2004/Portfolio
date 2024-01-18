@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEEDBACKS</title>
+</head>
+<body>
+    <video  id="myVideo" autoplay loop muted>
+        <source src="images\2.mp4" type="video/mp4">  
+    </video>
+<h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size:xx-large;"  >FEEDBACKS</h1>
+<form action="https://formsubmit.co/9fa20b70759c368e737206905fb3a6dc" method="POST">
+    <input id="o1" type="text" name="Name" required placeholder="enter your name">
+    <input id="o2" type="email" name="Email" required placeholder="enter your email">
+    <input id="o2" type="number" name="PhoneNo" required placeholder="enter your number">
+    <textarea id="o3" name="Message" placeholder="share your thoughts...."></textarea>
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <button type="submit">Send</button>
+</form>
+    <style>
+         #myVideo
+        {
+        right: 0;
+        bottom: 0;
+        position:absolute;
+        z-index:-2;
+        background-position: center;
+        min-width: 100%; 
+        min-height: 100%;
+        }
+        @media (min-aspect-ratio:16/9) 
+        {
+            #myVideo
+            {
+                width: 100%;
+                height:auto;
+               
+                
+            }   
+        }
+        @media (max-aspect-ratio:16/9) 
+        {
+            #myVideo
+            {
+                width: auto;
+                height:100%;
+            }   
+        }
+        *
+        {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;
+            text-align: center;
+            text-transform: capitalize;
+            color: aliceblue;
+        }
+        form
+        {
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        button
+        {
+            height: 60px;
+            width: 120px;
+            margin: 30px;
+            border-radius: 20px;
+            background-color: black;
+            color: aliceblue;
+            border: 4px solid rgb(255, 255, 255);
+
+            
+
+        }
+        button:hover
+        {
+            cursor: pointer;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            transition-duration: 100ms;
+            transition-delay: 20ms;
+            transform: scale(1.3);
+            font-weight: bolder;
+            border: 4px solid rgb(0, 0, 0);
+
+
+        }
+        #o1
+        {
+           
+            height: 30px;
+            width: 40%;
+            border: 4px solid rgb(255, 245, 245);
+            margin-top: 3%;
+            background: transparent;
+            border-radius: 20px;   
+        }
+        #o1::placeholder,#o2::placeholder,#o3::placeholder
+        {
+            font-size: larger;
+            font-weight: bolder;
+            color: aliceblue;
+        }
+        #o2
+        {
+            height: 30px;
+            width: 40%;
+            background: transparent;
+            border: 4px solid rgb(255, 255, 255);
+            margin-top: 3%;
+            border-radius: 20px;   
+        }
+        #o3
+        {
+            border-radius: 20px;
+            height: 200px;
+            background: transparent;
+            width: 40%;
+            margin-top: 2%;
+            border: 4px solid rgb(255, 240, 240);
+
+        }
+       
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: larger;
+            font-weight: bolder;
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+        }
+        .data
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;         
+            width: 80vw;
+            height: 80vh;
+            margin-left: 10%;
+            border: 10px solid black;
+        }
+    </style>
+<script src=" https://smtpjs.com/v3/smtp.js">
+
+
+
+</script>
+</body>
+</html>
